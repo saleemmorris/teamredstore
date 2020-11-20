@@ -1,0 +1,71 @@
+.front-page {
+  background-color: #fff;
+  .advert-01 {
+    margin-top: 5px;
+    height: 315px;
+    .row {
+      .container {
+        height: 315px;
+        .amd-pc-builds {
+          background-image: url(images/front-page/amd-mb.png);
+          background-color: $black;
+          background-size: cover;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+        .amd-pc-builds.title span:hover {
+          transform: scale(1.2);
+        }
+        .amd-pc-builds.title span {
+          color: #fff;
+          display: inline-block;
+          margin: 0 0.2em;
+          transition-timing-function: ease-in;
+          transition-delay: 0.05s;
+          transition-duration: 0.1s;
+        }
+        @media screen and (min-width: 300px) {
+          .amd-pc-builds.title {
+            background-color: #fff;
+            font-size: 2em;
+          }
+          .ryzen-5000-get-yours {
+            display: none;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          .amd-pc-builds.title {
+            background-color: #fff;
+            background-size: 100% 100%;
+            font-size: 1.6vw;
+          }
+        }
+        @media screen and (min-width: 993px) {
+          .ryzen-5000-get-yours {
+            display: block;
+          }
+          .amd-pc-builds.title {
+            background-color: #fff;
+            font-size: 2.2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .product-choice {
+    .row {
+      .container {
+        .lets-make-pc {
+          background-color: #fff;
+        }
+        .choose-own {
+          border-color: $logo;
+        }
+        .pre-designed {
+          border-color: $logo;
+        }
+      }
+    }
+  }
+}

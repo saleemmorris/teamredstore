@@ -1,0 +1,51 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin-bottom: -150px;
+}
+
+.push {
+  height: 200px;
+}
+
+footer {
+  color: white;
+  background-color: $navBkg;
+  bottom: 0;
+  height: 200px;
+
+  .contact {
+    .address-title {
+      font-size: 12px;
+    }
+    .address {
+      font-size: 10px;
+    }
+    .email {
+      width: max-content;
+      .email-sales,
+      .email-sales a,
+      .email-support,
+      .email-support a,
+      .email-general,
+      .email-general a {
+        font-size: 12px;
+      }
+      .email-sales a,
+      .email-support a,
+      .email-general a {
+        margin-left: 10px;
+        color: rgb(0, 0, 85);
+        float: right;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+}

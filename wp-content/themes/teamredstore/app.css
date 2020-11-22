@@ -10202,6 +10202,73 @@ footer .container .row .copyright {
   font-size: 12px;
 }
 
+body .content .container .woocommerce .woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-navigation ul li a {
+  color: #358f71;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
+  font-weight: bold;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content {
+  color: #202020;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content p strong {
+  text-transform: capitalize;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content p a {
+  color: #000072;
+  font-weight: bold;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses ::before {
+  display: flex;
+  flex-direction: row;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1 {
+  float: none;
+  width: 300px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1 ::before {
+  display: block;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1 header h3 {
+  float: none;
+  width: 400px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1 header a {
+  float: none;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column1 address {
+  float: none;
+  width: 400px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses ::before {
+  display: flex;
+  flex-direction: row;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2 {
+  float: none;
+  width: 300px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2 ::before {
+  display: block;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2 header h3 {
+  float: none;
+  width: 400px;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2 header a {
+  float: none;
+}
+body .content .container .woocommerce .woocommerce-MyAccount-content .u-columns.woocommerce-Addresses .u-column2 address {
+  float: none;
+  width: 400px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;

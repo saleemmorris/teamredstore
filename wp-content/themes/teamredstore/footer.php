@@ -1,4 +1,4 @@
-<footer id="footer" class="p-5 align-middle">
+<footer id="footer" class="p-5 mt-3 align-middle">
   <div class="container">
     <div class="info row d-flex justify-content-around p-0">
       <div class="pages">

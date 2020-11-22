@@ -10003,7 +10003,8 @@ header .menu-top-menu-container .top-nav-menu li {
 }
 header .menu-top-menu-container .top-nav-menu li a {
   display: block;
-  margin-top: 6px;
+  height: 40px;
+  line-height: 40px;
   color: #fff;
 }
 @media screen and (max-width: 575px) {
@@ -10158,7 +10159,6 @@ footer {
   background-color: #358f71;
   font-size: 10px;
   width: 100vw;
-  margin-top: 5px;
 }
 footer a {
   color: #fff;

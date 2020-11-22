@@ -14,7 +14,7 @@
   <?php wp_nav_menu(
       array(
         'theme_menu' => 'top-menu',
-        'menu_class' => 'top-nav-menu'
+        'menu_class' => 'top-nav-menu mb-3'
       )
     ); 
   ?>

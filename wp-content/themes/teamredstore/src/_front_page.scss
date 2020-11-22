@@ -1,70 +1,131 @@
-.front-page {
-  background-color: #fff;
+.front-page.container {
+  background-color: $logo;
+  min-height: calc(100vh - 200px);
+  box-shadow: $pageSidesShadow;
   .advert-01 {
-    margin-top: 5px;
     height: 315px;
     .row {
       .container {
         height: 315px;
+        box-shadow: 0 4px 10px #000, 2px 0 10px #000;
         .amd-pc-builds {
           background-image: url(images/front-page/amd-mb.png);
           background-color: $black;
           background-size: cover;
           background-repeat: no-repeat;
-          cursor: pointer;
+          a {
+            .amd-5000-series {
+              span {
+                color: #fff;
+                display: inline-block;
+                margin: 0 0.2em;
+                transition-timing-function: ease-in;
+                transition-delay: 0.05s;
+                transition-duration: 0.1s;
+                text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+              }
+              span:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
         }
-        .amd-pc-builds.title span:hover {
-          transform: scale(1.2);
-        }
-        .amd-pc-builds.title span {
-          color: #fff;
-          display: inline-block;
-          margin: 0 0.2em;
-          transition-timing-function: ease-in;
-          transition-delay: 0.05s;
-          transition-duration: 0.1s;
-        }
-        @media screen and (min-width: 300px) {
-          .amd-pc-builds.title {
+        @media screen and (max-width: 359px) {
+          .amd-pc-builds {
             background-color: #fff;
-            font-size: 2em;
+            a {
+              .amd-5000-series {
+                span {
+                  font-size: 1.4em;
+                }
+              }
+            }
+          }
+          .ryzen-5000-get-yours {
+            display: none;
+          }
+        }
+        @media screen and (min-width: 360px) {
+          .amd-pc-builds {
+            background-color: #fff;
+            a {
+              .amd-5000-series {
+                span {
+                  font-size: 2em;
+                }
+              }
+            }
           }
           .ryzen-5000-get-yours {
             display: none;
           }
         }
         @media screen and (min-width: 768px) {
-          .amd-pc-builds.title {
+          .amd-pc-builds {
             background-color: #fff;
             background-size: 100% 100%;
-            font-size: 1.6vw;
+            a {
+              .amd-5000-series {
+                span {
+                  font-size: 2em;
+                }
+              }
+            }
           }
         }
         @media screen and (min-width: 993px) {
           .ryzen-5000-get-yours {
             display: block;
           }
-          .amd-pc-builds.title {
+          .amd-pc-builds {
             background-color: #fff;
-            font-size: 2.2vw;
+            a {
+              .amd-5000-series {
+                span {
+                  font-size: 2.3em;
+                }
+              }
+            }
           }
         }
       }
     }
   }
-
   .product-choice {
+    background-color: $logo, 5;
+    @media screen and (max-width: 359px) {
+      .row.lets-make-pc-row {
+        display: none;
+      }
+    }
     .row {
-      .container {
-        .lets-make-pc {
-          background-color: #fff;
-        }
+      @media screen and (max-width: 359px) {
         .choose-own {
-          border-color: $logo;
+          h1 {
+            font-size: 1.2em;
+          }
         }
         .pre-designed {
-          border-color: $logo;
+          h1 {
+            font-size: 1.2em;
+          }
         }
+      }
+      @media screen and (min-width: 360px) {
+        .choose-own {
+          h1 {
+            font-size: 1.2em;
+          }
+        }
+        .pre-designed {
+          h1 {
+            font-size: 1.2em;
+          }
+        }
+      }
+      .lets-make-pc {
+        color: #fff;
+        background-color: rgb(78, 78, 78);
       }
     }
   }

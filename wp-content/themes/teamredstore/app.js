@@ -18070,6 +18070,24 @@ __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
+function stickFooterToBottom() {
+  document.body.style.height = "100%";
+  var winHeight = window.innerHeight;
+  var bodyHeight = document.body.offsetHeight;
+  var footerDiv = document.getElementById("footer");
+
+  if (winHeight > bodyHeight) {
+    footerDiv.style.position = "absolute";
+    footerDiv.style.bottom = "0px";
+    document.body.style.height = winHeight + "px";
+  } else {
+    footerDiv.style.position = "static";
+  }
+}
+
+stickFooterToBottom();
+window.onresize = stickFooterToBottom;
+
 /***/ }),
 
 /***/ "./src/app.scss":

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 <div class="container">
-  This page was not found
+  <h1 class="m-5">This page was not found</h1>  
 </div>
 <?php get_footer(); ?>

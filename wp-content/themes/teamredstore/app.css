@@ -9971,98 +9971,173 @@ h3 {
     border-color: #dee2e6;
   }
 }
-header {
-  background: #fff;
-  height: 100px;
-}
 header .logo {
   height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-header .top-nav-menu {
-  height: 40px;
+header .menu-top-menu-container {
+  background: #fff;
+  min-height: 40px;
+}
+header .menu-top-menu-container .top-nav-menu {
+  width: 100vw;
   margin: 0;
   padding: 0;
-  border-left: 5px solid #358f71;
-  background-color: #358f71;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none !important;
 }
-header .top-nav-menu li {
+header .menu-top-menu-container .top-nav-menu li:first-of-type {
+  border-left: 5px solid #358f71;
+}
+header .menu-top-menu-container .top-nav-menu li {
   flex: 1;
+  padding: 0;
   border-right: 5px solid #358f71;
   background-color: #202020;
   text-align: center;
 }
-header .top-nav-menu li a {
+header .menu-top-menu-container .top-nav-menu li a {
   display: block;
   margin-top: 6px;
   color: #fff;
 }
+@media screen and (max-width: 575px) {
+  header .menu-top-menu-container .top-nav-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  header .menu-top-menu-container .top-nav-menu li:first-of-type {
+    border-top: 5px solid #358f71;
+    border-left: none;
+  }
+  header .menu-top-menu-container .top-nav-menu li {
+    border-right: none;
+    border-bottom: 5px solid #358f71;
+    border-left: none;
+  }
+}
 
-.front-page {
+.error404 {
   background-color: #fff;
 }
-.front-page .advert-01 {
-  margin-top: 5px;
+
+.front-page.container {
+  background-color: #8f3535;
+  min-height: calc(100vh - 200px);
+  box-shadow: -1px 0 3px #000, 1px 0 3px #000;
+}
+.front-page.container .advert-01 {
   height: 315px;
 }
-.front-page .advert-01 .row .container {
+.front-page.container .advert-01 .row .container {
   height: 315px;
+  box-shadow: 0 4px 10px #000, 2px 0 10px #000;
 }
-.front-page .advert-01 .row .container .amd-pc-builds {
+.front-page.container .advert-01 .row .container .amd-pc-builds {
   background-image: url(images/front-page/amd-mb.png);
   background-color: #202020;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
-.front-page .advert-01 .row .container .amd-pc-builds.title span:hover {
-  transform: scale(1.2);
-}
-.front-page .advert-01 .row .container .amd-pc-builds.title span {
+.front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span {
   color: #fff;
   display: inline-block;
   margin: 0 0.2em;
   transition-timing-function: ease-in;
   transition-delay: 0.05s;
   transition-duration: 0.1s;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
 }
-@media screen and (min-width: 300px) {
-  .front-page .advert-01 .row .container .amd-pc-builds.title {
+.front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 359px) {
+  .front-page.container .advert-01 .row .container .amd-pc-builds {
     background-color: #fff;
+  }
+  .front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span {
+    font-size: 1.4em;
+  }
+  .front-page.container .advert-01 .row .container .ryzen-5000-get-yours {
+    display: none;
+  }
+}
+@media screen and (min-width: 360px) {
+  .front-page.container .advert-01 .row .container .amd-pc-builds {
+    background-color: #fff;
+  }
+  .front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span {
     font-size: 2em;
   }
-  .front-page .advert-01 .row .container .ryzen-5000-get-yours {
+  .front-page.container .advert-01 .row .container .ryzen-5000-get-yours {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .front-page .advert-01 .row .container .amd-pc-builds.title {
+  .front-page.container .advert-01 .row .container .amd-pc-builds {
     background-color: #fff;
     background-size: 100% 100%;
-    font-size: 1.6vw;
+  }
+  .front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span {
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 993px) {
-  .front-page .advert-01 .row .container .ryzen-5000-get-yours {
+  .front-page.container .advert-01 .row .container .ryzen-5000-get-yours {
     display: block;
   }
-  .front-page .advert-01 .row .container .amd-pc-builds.title {
+  .front-page.container .advert-01 .row .container .amd-pc-builds {
     background-color: #fff;
-    font-size: 2.2vw;
+  }
+  .front-page.container .advert-01 .row .container .amd-pc-builds a .amd-5000-series span {
+    font-size: 2.3em;
   }
 }
-.front-page .product-choice .row .container .lets-make-pc {
-  background-color: #fff;
+.front-page.container .product-choice {
+  background-color: #8f3535, 5;
 }
-.front-page .product-choice .row .container .choose-own {
-  border-color: #8f3535;
+@media screen and (max-width: 359px) {
+  .front-page.container .product-choice .row.lets-make-pc-row {
+    display: none;
+  }
 }
-.front-page .product-choice .row .container .pre-designed {
-  border-color: #8f3535;
+@media screen and (max-width: 359px) {
+  .front-page.container .product-choice .row .choose-own h1 {
+    font-size: 1.2em;
+  }
+  .front-page.container .product-choice .row .pre-designed h1 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 360px) {
+  .front-page.container .product-choice .row .choose-own h1 {
+    font-size: 1.2em;
+  }
+  .front-page.container .product-choice .row .pre-designed h1 {
+    font-size: 1.2em;
+  }
+}
+.front-page.container .product-choice .row .lets-make-pc {
+  color: #fff;
+  background-color: #4e4e4e;
 }
 
-.main.container .title {
-  color: #e9e9e9;
+.content {
+  color: white;
+  background-color: white;
+  min-height: calc(100vh - 200px);
+}
+.content .container {
+  box-shadow: -1px 0 3px #000, 1px 0 3px #000;
+  min-height: calc(100vh - 200px);
+  background-color: #6a2727;
 }
 
 html {
@@ -10075,49 +10150,59 @@ body {
   margin-bottom: -150px;
 }
 
-.push {
-  height: 200px;
-}
-
 footer {
   color: white;
   background-color: #358f71;
-  bottom: 0;
-  height: 200px;
+  font-size: 10px;
+  width: 100vw;
+  margin-top: 5px;
 }
-footer .contact .address-title {
+footer a {
+  color: #fff;
+}
+footer .container .info.row .pages.title {
   font-size: 12px;
 }
-footer .contact .address {
+footer .container .info.row .pages {
   font-size: 10px;
 }
-footer .contact .email {
+footer .container .info.row .address-title {
+  font-size: 12px;
+}
+footer .container .info.row .address {
+  font-size: 10px;
+}
+footer .container .info.row .email.title {
+  font-size: 12px;
+}
+footer .container .info.row .email {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-footer .contact .email .email-sales,
-footer .contact .email .email-sales a,
-footer .contact .email .email-support,
-footer .contact .email .email-support a,
-footer .contact .email .email-general,
-footer .contact .email .email-general a {
-  font-size: 12px;
+footer .container .info.row .email .email-sales,
+footer .container .info.row .email .email-sales a,
+footer .container .info.row .email .email-support,
+footer .container .info.row .email .email-support a,
+footer .container .info.row .email .email-general,
+footer .container .info.row .email .email-general a {
+  font-size: 10px;
 }
-footer .contact .email .email-sales a,
-footer .contact .email .email-support a,
-footer .contact .email .email-general a {
+footer .container .info.row .email .email-sales a,
+footer .container .info.row .email .email-support a,
+footer .container .info.row .email .email-general a {
   margin-left: 10px;
   color: #000055;
   float: right;
 }
-footer .copyright {
-  font-size: 8px;
+footer .container .row .copyright {
+  font-size: 12px;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #202020;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 a,

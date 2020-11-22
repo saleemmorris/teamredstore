@@ -7,14 +7,15 @@
 <body <?php body_class(); ?>>
 
 <header>
+  
+<div class="container d-flex justify-content-between">
+    <a href="<?php bloginfo("url"); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Team Red Store" class="logo"></a>
+  </div>
   <?php wp_nav_menu(
       array(
         'theme_menu' => 'top-menu',
-        'menu_class' => 'top-nav-menu d-sm-flex'
+        'menu_class' => 'top-nav-menu'
       )
     ); 
   ?>
-  <div class="container d-flex justify-content-between">
-    <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Team Red Store" class="logo">
-  </div>
 </header>

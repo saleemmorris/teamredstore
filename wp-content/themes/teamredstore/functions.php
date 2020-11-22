@@ -17,8 +17,9 @@ function load_javascript()
 }
 add_action('wp_enqueue_scripts', 'load_javascript');
 
-// add menu support
+// add support
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 // register menus
 register_nav_menus(
@@ -27,3 +28,4 @@ register_nav_menus(
     'add_link_class' => 'btn'
   )
 );
+
